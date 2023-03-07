@@ -1,0 +1,98 @@
+npm install -g create-react-native-app
+Then
+create-react-native-app MyReactNative
+npm install -g react-native-cli
+npm run eject
+//////HERE WE USED////:
+npx create-react-native-app -g -t with-router
+Then:
+npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1,
+Then
+npm install @react-native-material/core
+Then
+npm i @expo/vector-icons/MaterialCommunityIcons
+OR
+npm i react-native-vector-icons
+
+FOR DEEP LINKS: This allows people sharing links.
+npx uri-scheme open exp://10.0.0.181:19000/--/feed --ios
+This link: exp://10.0.0.181:19000/ should be replaced with your link, once published.Its used to open your application, within the phone and then linking to the sub-link within that application. All phone applications has an address to the outside world.
+
+Then link
+MKLINK [[/D] | [/H] | [/J]] Link Target
+
+        /D      Creates a directory symbolic link.  Default is a file
+                symbolic link.
+        /H      Creates a hard link instead of a symbolic link.
+        /J      Creates a Directory Junction.
+        Link    Specifies the new symbolic link name.
+        Target  Specifies the path (relative or absolute) that the new link
+                refers to.
+
+C:\Users\garya\projects\React\ReactNative\firstProject\npxCreatExpoApp\my-app> MKLINK link  react-native-vector-icons 
+symbolic link created for link <<===>> react-native-vector-icons
+TO RUN THE DEVICE ANDROID SIMULTOR:
+npx react-native run-android
+
+in debug state:
+settings=>search("react-native.pack"):
+React-native › Packager: Port
+React Native packager port
+-change it to 19000
+To publish: 
+expo.io/@username/app
+=>expo publish:
+app.json => has all the features for publishing the app. You can change anyone of them to reflect the build description in publishing.io/@username/app
+The publishing( to show only): https://expo.io/@/appName
+
+SHORT-CUTS:
+ CTRL +  D : multiple select
+ ALT + up/down arrow ( moves highlighted code)
+ CRT + space => to get the options
+ rnss : react-native Style Sheet
+ react-native run-android => to run android simulator
+ctrl+m => hot reload the simulator
+- npm run android
+rnfc: react native functional component
+CLEAR CACH : npm start --clear
+
+GIT CMD LINE:
+git rm -f --cached mainApp  # removes previous branches created 
+
+ DIMENSIONS:
+ Density-independent Pixels:( not px,rem,etc) just straight numbers
+ Phyical Pixels = DIPs X Scale Factor
+ Model4,4s (IOS):
+ Points:320 X 480
+ Scale Factor: 2 X ( means that each point represents 2px)
+ Pixels: 640 X 960 (320 x 2 X 480 x 2)
+ View Width: 150 X2 = 300 ( less than 1/2 of the width)
+
+ Model: 11 Pro Max:
+ Points:414 X 896 Points
+ Scale : 3 X ( === 3px per point)
+ Pixels: 1242 X 2688 ( 3x414 X 3x896)
+ View Width: 150 X 3 = 450 pixels
+
+ ORIENTATION:
+ link: https://github.com/react-native-community/hooks
+ use: react-native-community/hooks
+ npm install @react-native-community/hooks
+RANDOME PHOTOS:
+https://picsum.photos/200/300
+https://picsum.photos/width/height
+
+TOO LOOK UP:
+jsconfig.json
+
+EXPO ROUTER:IT'S BUILT ONTOP OF react-navigation
+note: https://reactnavigation.org/docs/getting-started/
+note: npm install @react-navigation/native
+so expoRouter adds folders to the url but uses react Navigation engine.
+expo router generates a route to each folder automatically by the name of the folder.
+ie: index.js="/", profile="/profile":=> lowercase "p" represent a functional component (rnfc)
+ie;   <Link href="/profile">profile</Link>, where profile=folder on same level as index.js
+material bottonm navigator: good to have:
+npm install @react-navigation/material-bottom-tabs react-native-paper react-native-vector-icons
+with:
+npm i react-native-vector-icons
